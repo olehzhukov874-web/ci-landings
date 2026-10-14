@@ -389,7 +389,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
             <p class="phonewhy">Le numéro sert à l’appel de confirmation. Il est transmis uniquement au vendeur, au service de confirmation des commandes et au livreur.</p>
             <input type="hidden" name="kw" value="ci-m1-testoxed">
             <button class="btn btn-primary btn-cta" type="submit">COMMANDER L’ORIGINAL</button>
-            <p class="today-line">🛒 Aujourd’hui ont déjà commandé <b class="todayN">—</b> personnes</p>
+            <p class="today-line">🛒 Aujourd’hui, déjà <b class="todayN">—</b> personnes ont commandé</p>
             <p class="form-note">Aucune avance · vous vérifiez avant de payer · 🔒 chiffrement SSL</p>
           </form>
           <div class="ok-msg"><div class="ok-big"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div>
@@ -498,7 +498,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
       <div><div class="eyebrow">Avis des clients</div><h2 style="margin:0">Ce que disent les personnes qui ont commandé ici</h2></div>
       <div class="rv-score"><b>4,8</b><div><div class="stars">★★★★★</div>sur la base de 1 600 avis</div></div>
       <div class="rv-dist"><div><span>5★</span><i style="width:82%"></i><b>82%</b></div><div><span>4★</span><i style="width:13%"></i><b>13%</b></div><div><span>3★</span><i style="width:5%"></i><b>5%</b></div></div>
-      <span class="pill ok" style="align-self:center">↻ 87 % des clients recommandent une deuxième fois</span>
+      <span class="pill ok" style="align-self:center">↻ 87 % des clients commandent une deuxième fois</span>
     </div>
     <div class="reviews" id="reviews">
       <div class="review"><div class="head"><div class="avatar" style="background:#1f6feb">K<img src="../../img/av/rv0.jpg" alt="" loading="lazy" onerror="this.remove()"></div><div><div class="name">Kouadio A.<svg class="src" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1877f2"/><path d="M13.3 20v-6.2h2.1l.3-2.4h-2.4V9.8c0-.7.2-1.2 1.2-1.2h1.3V6.5c-.2 0-1-.1-1.9-.1-1.9 0-3.1 1.1-3.1 3.2v1.8H8.7v2.4h2.1V20z" fill="#fff"/></svg></div><div class="city">Abidjan · <span class="ago" data-i="0"></span></div></div><span class="verified">✔ achat vérifié</span></div><div class="stars">★★★★★</div><p>«Commandé mardi dans l’après-midi, le carton est arrivé jeudi matin ; le livreur m’a appelé pour dire qu’il était déjà devant la maison.»</p></div>
@@ -692,7 +692,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
             <p class="phonewhy">Le numéro sert à l’appel de confirmation. Il est transmis uniquement au vendeur, au service de confirmation des commandes et au livreur.</p>
             <input type="hidden" name="kw" value="ci-m1-testoxed">
             <button class="btn btn-primary btn-cta" type="submit">COMMANDER L’ORIGINAL</button>
-            <p class="today-line">🛒 Aujourd’hui ont déjà commandé <b class="todayN">—</b> personnes</p>
+            <p class="today-line">🛒 Aujourd’hui, déjà <b class="todayN">—</b> personnes ont commandé</p>
             <p class="form-note">Aucune avance · vous vérifiez avant de payer · 🔒 chiffrement SSL</p>
           </form>
           <div class="ok-msg"><div class="ok-big"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg></div>
@@ -754,7 +754,7 @@ body.free .disc,body:not(.free) .nodisc{display:none}
   try{ var st=+localStorage.getItem('lp_stock'); if(st>6&&st<stock) stock=st; }catch(e){}   // остаток не растёт при перезагрузке
   function rs(){ sn.textContent=stock; sn2.textContent=stock; sb.style.width=Math.max(6,(stock/stockMax)*100)+'%'; try{ localStorage.setItem('lp_stock',stock); }catch(e){} }
   rs();
-  var L={"cc": "+225", "phMin": 10, "phMax": 10, "ph0": false, "fem": "(?!)", "t1m": "vient de passer commande", "t1f": "vient de passer commande", "t2m": "vient de commander 2 boîtes", "t2f": "vient de commander 2 boîtes", "agoMin": " min", "agoH": " h", "agoY": "hier", "agoD": " j", "names": ["Kouadio", "Aya", "Konan", "Adjoua", "Yao", "Akissi", "Kouassi", "Amenan", "Koffi", "Ahou", "Kouamé", "Affoué", "N’Guessan", "Mariam", "Ibrahim", "Fatoumata", "Aboubacar", "Aminata", "Serge", "Chantal"], "cities": ["Abidjan", "Bouaké", "Daloa", "Yamoussoukro", "San-Pédro", "Korhogo", "Man", "Divo", "Gagnoa", "Abengourou", "Anyama", "Agboville", "Grand-Bassam", "Dabou", "Bondoukou", "Séguéla", "Odienné", "Soubré", "Adzopé", "Ferkessédougou"]};   // локаль тостов/дат/телефона (генерится сборкой из i18n)
+  var L={"cc": "+225", "phMin": 10, "phMax": 10, "ph0": false, "fem": "(?!)", "t1m": "vient de passer commande", "t1f": "vient de passer commande", "t2m": "vient de commander 2 boîtes", "t2f": "vient de commander 2 boîtes", "agoMin": "il y a {n} min", "agoH": "il y a {n} h", "agoY": "hier", "agoD": "il y a {n} j", "names": ["Kouadio", "Aya", "Konan", "Adjoua", "Yao", "Akissi", "Kouassi", "Amenan", "Koffi", "Ahou", "Kouamé", "Affoué", "N’Guessan", "Mariam", "Ibrahim", "Fatoumata", "Aboubacar", "Aminata", "Serge", "Chantal"], "cities": ["Abidjan", "Bouaké", "Daloa", "Yamoussoukro", "San-Pédro", "Korhogo", "Man", "Divo", "Gagnoa", "Abengourou", "Anyama", "Agboville", "Grand-Bassam", "Dabou", "Bondoukou", "Séguéla", "Odienné", "Soubré", "Adzopé", "Ferkessédougou"]};   // локаль тостов/дат/телефона (генерится сборкой из i18n)
   var NAMES=L.names, CITIES=L.cities;
   function drop(){
     if(stock>6){
@@ -801,8 +801,9 @@ body.free .disc,body:not(.free) .nodisc{display:none}
   var AGO=[14,42,96,180,260,420];   // первые шесть — свежие, дальше растёт плавно (отзывов теперь 72)
   Array.prototype.forEach.call(document.querySelectorAll('.ago'),function(el){
     var i=+el.getAttribute('data-i'), m=(i<AGO.length?AGO[i]:Math.round(600+i*i*3.2+i*180)), t;
-    if(m<60) t=m+L.agoMin; else if(m<1440) t=Math.round(m/60)+L.agoH;
-    else if(m<2880) t=L.agoY; else t=Math.round(m/1440)+L.agoD;
+    var agoF=function(n,s){return s.indexOf('{n}')>=0?s.replace('{n}',n):n+s;};   // «vor {n} Min.» / «{n} min temu»
+    if(m<60) t=agoF(m,L.agoMin); else if(m<1440) t=agoF(Math.round(m/60),L.agoH);
+    else if(m<2880) t=L.agoY; else t=agoF(Math.round(m/1440),L.agoD);
     el.textContent=t;
   });
 
